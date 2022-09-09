@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.view.activities.LoginActivity">
+
+    <EditText
+        android:id="@+id/passwordEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+
+        android:layout_marginTop="50dp"
+
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/emailEt"
+        app:layout_constraintStart_toStartOf="@+id/emailEt"
+        app:layout_constraintTop_toBottomOf="@+id/emailEt" />
+
+    <EditText
+        android:id="@+id/emailEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+
+        android:layout_marginTop="200dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+
+        android:layout_marginTop="50dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/passwordEt"
+        app:layout_constraintStart_toStartOf="@+id/passwordEt"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEt" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unesite username"
+        app:layout_constraintBottom_toTopOf="@+id/emailEt"
+        app:layout_constraintEnd_toEndOf="@+id/emailEt"
+        app:layout_constraintStart_toStartOf="@+id/emailEt" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unesite password"
+        app:layout_constraintBottom_toTopOf="@+id/passwordEt"
+        app:layout_constraintEnd_toEndOf="@+id/passwordEt"
+        app:layout_constraintStart_toStartOf="@+id/passwordEt" />
+</androidx.constraintlayout.widget.ConstraintLayout>
